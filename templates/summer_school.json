@@ -22,7 +22,7 @@
     },
     {
       "name": "dateOfBirth",
-      "type": "DATE_OF_BIRTH",
+      "type": "DATEOFBIRTH",
       "displayName": {
         "en": "Date of birth",
         "de": "Geburtstag"
