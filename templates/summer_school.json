@@ -1,0 +1,89 @@
+{
+  "id": "d96ada5a-525b-4b2e-9737-032e6bde6e86",
+  "type": "CredentialSchemaTemplate",
+  "displayName": "Summer School Confirmation of Attendance",
+  "libraryKey": "uni-musterstadt-summerschool",
+  "attributes": [
+    {
+      "name": "firstName",
+      "type": "STRING",
+      "displayName": {
+        "en": "First Name",
+        "de": "Vorname"
+      }
+    },
+    {
+      "name": "lastName",
+      "type": "STRING",
+      "displayName": {
+        "en": "Last Name",
+        "de": "Nachname"
+      }
+    },
+    {
+      "name": "dateOfBirth",
+      "type": "DATE",
+      "displayName": {
+        "en": "Date of birth",
+        "de": "Geburtstag"
+      }
+    },
+    {
+      "name": "course",
+      "type": "STRING",
+      "displayName": {
+        "en": "Course",
+        "de": "Kurs"
+      }
+    }
+  ],
+  "issuerSettings": {
+    "issuerKeyType": "HARDWARE_BIOMETRIC_AUTH",
+    "doctype": "summer-school-v1.0-mdl",
+    "namespace": "org.university.summerschool",
+    "vct": "urn:summer-school-v1.0-sdjwt"
+  },
+  "style": {
+    "title": "{{cardTitle}}",
+    "subtitle": "{{firstName}} {{lastName}}",
+    "cardColor": 4278190080,
+    "textColor": "light",
+    "backgroundCard": "",
+    "orderedProperties": ["firstName", "lastName", "dateOfBirth", "course"]
+  },
+  "metaAttributes": [
+    {
+      "name": "cardTitle",
+      "displayName": {
+        "en": "Summer School",
+        "de": "Sommerakademie"
+      }
+    }
+  ],
+  "attributeRules": {
+    "firstName": {
+      "description": "First name of the user",
+      "isDisplayNameEditable": false,
+      "isRequired": true,
+      "canBeEmpty": false
+    },
+    "lastName": {
+      "description": "Last name of the user",
+      "isDisplayNameEditable": false,
+      "isRequired": true,
+      "canBeEmpty": false
+    },
+    "dateOfBirth": {
+      "description": "User's date of birth",
+      "isDisplayNameEditable": false,
+      "isRequired": false,
+      "canBeEmpty": false
+    },
+    "course": {
+      "description": "Name of the course",
+      "isDisplayNameEditable": true,
+      "isRequired": true,
+      "canBeEmpty": true
+    }
+  }
+}

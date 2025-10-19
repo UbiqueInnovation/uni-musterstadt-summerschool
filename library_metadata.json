@@ -1,0 +1,7 @@
+{
+  "key": "dvs-vc-katalog",
+  "displayName": "DVS VC Katalog",
+  "templateUrls": [
+    "https://raw.githubusercontent.com/UbiqueInnovation/uni-musterstadt-summerschool/refs/heads/main/templates/summer_school.json"
+  ]
+}
